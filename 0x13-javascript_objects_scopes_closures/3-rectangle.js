@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// JS script to define a class
+
 class Rectangle {
   constructor(w, h) {
     if (w <= 0 || h <= 0) {
@@ -19,4 +19,10 @@ class Rectangle {
     }
   }
 }
-module.exports = Rectangle;
+
+// Example usage
+const r1 = new Rectangle(2, 3);
+r1.print();
+
+const r2 = new Rectangle(10, 5);
+r2.print();
