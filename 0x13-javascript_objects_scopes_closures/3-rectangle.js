@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// JS script to define a class
 class Rectangle {
 	constructor (w, h) {
 		if (((w = parseInt(w)) > 0) && ((h = parseInt(h)) > 0)) {
