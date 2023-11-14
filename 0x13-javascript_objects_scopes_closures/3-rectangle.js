@@ -1,15 +1,22 @@
 #!/usr/bin/node
 // JS script to define a class
 class Rectangle {
-	constructor (w, h) {
-		if (((w = parseInt(w)) > 0) && ((h = parseInt(h)) > 0)) {
-			this.width = w;
-			this.height = h;
-		}
-}
+  constructor(w, h) {
+    if (w <= 0 || h <= 0) {
+      // create an empty object
+      return;
+    }
 
-print() {
-	console.log(('X'.repeat(this.width) + '\n').repeat(this.height - 1) + 'X'.repeat(this.width));
-}
+    this.width = w;
+    this.height = h;
+  }
+
+  print() {
+    if (this.width && this.height) {
+      for (let i = 0; i < this.height; i++) {
+        console.log("X".repeat(this.width));
+      }
+    }
+  }
 }
 module.exports = Rectangle;
