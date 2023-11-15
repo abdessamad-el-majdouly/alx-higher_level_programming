@@ -1,4 +1,4 @@
 #!/usr/bin/node
-for (const line of ['C is fun', 'Python is cool', 'JavaScript is amazing']) {
-  console.log(line);
-}
+
+const arrayLanguage = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+arrayLanguage.forEach((sentence) => console.log(sentence));
